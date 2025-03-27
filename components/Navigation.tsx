@@ -3,7 +3,7 @@ import { Code } from "lucide-react";
 
 export default function Navigation() {
   return (
-    <nav className="fixed top-0 left-0 w-full bg-white/80 dark:bg-slate-900/80 backdrop-blur-sm z-50 shadow-sm border-b border-slate-200 dark:border-slate-800">
+     <nav className="fixed top-0 left-0 w-full bg-white/80 dark:bg-slate-900/80 backdrop-blur-sm z-40 shadow-sm border-b border-slate-200 dark:border-slate-800">
       <div className="container mx-auto px-4 py-3 flex justify-between items-center">
         <Link
           href="/"
