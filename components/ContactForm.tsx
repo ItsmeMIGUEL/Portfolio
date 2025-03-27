@@ -167,6 +167,15 @@ export default function ContactForm() {
         pauseOnFocusLoss
         draggable
         pauseOnHover
+        style={{
+          zIndex: 9999,
+          position: "fixed",
+          top: "4rem", // Adjust this value based on your nav height
+          right: "1rem",
+        }}
+        toastStyle={{
+          zIndex: 9999,
+        }}
       />
     </div>
   );
