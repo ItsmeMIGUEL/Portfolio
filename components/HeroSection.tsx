@@ -381,7 +381,7 @@ export default function HeroSection() {
               <div className="absolute inset-0 rounded-full bg-gradient-to-r from-primary to-secondary opacity-20 blur-md"></div>
               <div className="relative z-10 w-full h-full rounded-full overflow-hidden border-4 border-white dark:border-slate-700 shadow-lg">
                 <Image
-                  src="/s1.jpg"
+                  src="/s1.png"
                   alt="JM Arcuino - Software Engineer"
                   width={192}
                   height={192}
