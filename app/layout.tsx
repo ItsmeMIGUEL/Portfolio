@@ -4,8 +4,8 @@ import { Code } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Portfolio",
-  description: "Created with v0",
-  generator: "v0.dev",
+  description: "A portfolio showcasing my work and skills.",
+  generator: "Next.js",
 };
 
 export default function RootLayout({
