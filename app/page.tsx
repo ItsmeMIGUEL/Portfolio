@@ -34,18 +34,17 @@ export default function Portfolio() {
      <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 dark:from-slate-900 dark:to-slate-800">
       <Navigation />
       <HeroSection/>
-      <div className="mx-20">
-        <AboutMe />
-        <EducationSection />
-        <CodeSamples />
-        <MySkills />
-        <WorkExperience />
-        <OJTSection />
-        <HobbiesSection />
-        <Testimonials />
-        <MyProjects />
-        <GitHubStats />
-      </div>
+      <AboutMe />
+      <EducationSection />
+      <CodeSamples />
+      <MySkills />
+      <WorkExperience />
+      <OJTSection />
+      <HobbiesSection />
+      <Testimonials />
+      <MyProjects />
+      <GitHubStats />
+      
       {/* Contact Section */}
       <section
         id="contact"
@@ -67,9 +66,7 @@ export default function Portfolio() {
 
           <div className="grid md:grid-cols-2 gap-12">
             
-            <div className="mx-20">
-              <ContactForm />
-            <div>
+            <ContactForm />
             <div>
               <div className="bg-slate-50 dark:bg-slate-900 rounded-xl p-8 shadow-lg border border-slate-200 dark:border-slate-700 mb-8 transform transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                 <h3 className="text-2xl font-bold mb-6 text-slate-800 dark:text-white">
