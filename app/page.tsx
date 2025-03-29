@@ -31,19 +31,22 @@ export default function Portfolio() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 dark:from-slate-900 dark:to-slate-800 my-20">
-      <Navigation />
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 dark:from-slate-900 dark:to-slate-800">
       <HeroSection />
-      <AboutMe />
-      <EducationSection />
-      <CodeSamples />
-      <MySkills />
-      <WorkExperience />
-      <OJTSection />
-      <HobbiesSection />
-      <Testimonials />
-      <MyProjects />
-      <GitHubStats />
+      <div className="my-20">
+        <Navigation />
+        <AboutMe />
+        <GallerySection />
+        <EducationSection />
+        <CodeSamples />
+        <MySkills />
+        <WorkExperience />
+        <OJTSection />
+        <HobbiesSection />
+        <Testimonials />
+        <MyProjects />
+        <GitHubStats />
+      </div>
       {/* Contact Section */}
       <section
         id="contact"
