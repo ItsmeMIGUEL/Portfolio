@@ -381,7 +381,7 @@ export default function HeroSection() {
               <div className="absolute inset-0 rounded-full bg-gradient-to-r from-primary to-secondary opacity-20 blur-md"></div>
               <div className="relative z-10 w-full h-full rounded-full overflow-hidden border-4 border-white dark:border-slate-700 shadow-lg">
                 <Image
-                  src="/s1.png"
+                  src="/p1.jpg"
                   alt="JM Arcuino - Software Engineer"
                   width={192}
                   height={192}
@@ -449,7 +449,7 @@ export default function HeroSection() {
               {[
                 { label: "Projects", value: "4+" },
                 { label: "Experience", value: "0 Years" },
-                { label: "Clients", value: "3+" },
+                { label: "Clients", value: "3" },
               ].map((stat, index) => (
                 <div
                   key={index}
