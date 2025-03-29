@@ -66,8 +66,10 @@ export default function Portfolio() {
           </div>
 
           <div className="grid md:grid-cols-2 gap-12">
-            <ContactForm />
-
+            
+            <div className="mx-20">
+              <ContactForm />
+            <div>
             <div>
               <div className="bg-slate-50 dark:bg-slate-900 rounded-xl p-8 shadow-lg border border-slate-200 dark:border-slate-700 mb-8 transform transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                 <h3 className="text-2xl font-bold mb-6 text-slate-800 dark:text-white">
