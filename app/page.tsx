@@ -31,11 +31,10 @@ export default function Portfolio() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 dark:from-slate-900 dark:to-slate-800 mx-10">
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 dark:from-slate-900 dark:to-slate-800 mx-20">
       <Navigation />
       <HeroSection />
       <AboutMe />
-      <GallerySection />
       <EducationSection />
       <CodeSamples />
       <MySkills />
