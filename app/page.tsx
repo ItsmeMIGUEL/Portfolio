@@ -18,6 +18,9 @@ import ContactForm from "@/components/ContactForm";
 import EducationSection from "@/components/EducationSection";
 import HobbiesSection from "@/components/HobbiesSection";
 import OJTSection from "@/components/OjtSection";
+import HeroSection from "@/components/HeroSection";
+import GallerySection from "@/components/Gallery";
+
 import { db } from "@/lib/firebase";
 
 export default function Portfolio() {
@@ -30,137 +33,9 @@ export default function Portfolio() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 dark:from-slate-900 dark:to-slate-800">
       <Navigation />
-
-      {/* Hero Section */}
-      <section className="relative h-screen flex items-center justify-center text-center px-4 overflow-hidden">
-        <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-to-r from-primary/10 to-secondary/10 dark:from-primary/5 dark:to-secondary/5"></div>
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-primary/20 dark:bg-primary/10 rounded-full blur-3xl"></div>
-
-          {/* Animated code particles */}
-          <div className="absolute inset-0 opacity-10 dark:opacity-20">
-            {isClient && (
-              <>
-                {Array.from({ length: 20 }).map((_, i) => (
-                  <div
-                    key={i}
-                    className="absolute text-primary font-mono text-xs"
-                    style={{
-                      top: `${Math.random() * 100}%`,
-                      left: `${Math.random() * 100}%`,
-                      opacity: Math.random() * 0.8 + 0.2,
-                      transform: `scale(${Math.random() * 0.5 + 0.5})`,
-                      animation: `float ${
-                        Math.random() * 10 + 10
-                      }s linear infinite`,
-                    }}
-                  >
-                    {
-                      [
-                        "<div>",
-                        "</div>",
-                        "<span>",
-                        "{data}",
-                        "function()",
-                        "return",
-                        "const",
-                        "let",
-                        "import",
-                        "export",
-                        "</>",
-                      ][Math.floor(Math.random() * 11)]
-                    }
-                  </div>
-                ))}
-              </>
-            )}
-          </div>
-        </div>
-
-        <div className="relative z-1 max-w-3xl mx-auto">
-          <div className="mb-6 mx-auto w-32 h-32 rounded-full overflow-hidden border-4 border-white dark:border-slate-700 shadow-lg relative">
-            <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-secondary/20 z-10"></div>
-            <Image
-              src="/placeholder.svg?height=128&width=128"
-              alt="Profile"
-              width={128}
-              height={128}
-              className="object-cover relative z-0"
-            />
-          </div>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 text-slate-800 dark:text-white">
-            Hi, I'm{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">
-              JM
-            </span>
-          </h1>
-          <p className="text-xl md:text-2xl text-slate-600 dark:text-slate-300 mb-8">
-            <span className="typing-text">
-              Software Engineer & Full-Stack Developer
-            </span>
-          </p>
-          <div className="flex justify-center space-x-4 mb-8">
-            <a
-              href="#projects"
-              className="group bg-gradient-to-r from-primary to-primary/90 hover:from-primary/90 hover:to-primary text-white px-6 py-3 rounded-lg font-medium transition-all duration-300 shadow-md hover:shadow-lg hover:shadow-primary/20"
-            >
-              <span className="flex items-center">
-                View My Work
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-5 w-5 ml-2 group-hover:translate-x-1 transition-transform"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M17 8l4 4m0 0l-4 4m4-4H3"
-                  />
-                </svg>
-              </span>
-            </a>
-            <a
-              href="#contact"
-              className="bg-white dark:bg-slate-800 hover:bg-slate-100 dark:hover:bg-slate-700 text-slate-800 dark:text-white border border-slate-200 dark:border-slate-700 px-6 py-3 rounded-lg font-medium transition-colors shadow-md hover:shadow-lg"
-            >
-              Contact Me
-            </a>
-          </div>
-          <div className="flex justify-center space-x-4">
-            <a
-              href="#"
-              className="text-slate-600 hover:text-primary dark:text-slate-400 dark:hover:text-primary transition-colors transform hover:scale-110 duration-200"
-            >
-              <Github className="w-6 h-6" />
-            </a>
-            <a
-              href="#"
-              className="text-slate-600 hover:text-primary dark:text-slate-400 dark:hover:text-primary transition-colors transform hover:scale-110 duration-200"
-            >
-              <Linkedin className="w-6 h-6" />
-            </a>
-            <a
-              href="#"
-              className="text-slate-600 hover:text-primary dark:text-slate-400 dark:hover:text-primary transition-colors transform hover:scale-110 duration-200"
-            >
-              <Mail className="w-6 h-6" />
-            </a>
-          </div>
-        </div>
-        <div className="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce">
-          <a
-            href="#about"
-            className="text-slate-400 hover:text-primary dark:text-slate-500 dark:hover:text-primary transition-colors"
-          >
-            <ChevronDown className="w-8 h-8" />
-          </a>
-        </div>
-      </section>
-
+      <HeroSection />
       <AboutMe />
+      <GallerySection />
       <EducationSection />
       <CodeSamples />
       <MySkills />
@@ -168,10 +43,8 @@ export default function Portfolio() {
       <OJTSection />
       <HobbiesSection />
       <Testimonials />
-      <LatestArticles />
       <MyProjects />
       <GitHubStats />
-
       {/* Contact Section */}
       <section
         id="contact"
