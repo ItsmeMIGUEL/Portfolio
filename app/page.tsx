@@ -48,7 +48,7 @@ export default function Portfolio() {
       {/* Contact Section */}
       <section
         id="contact"
-        className="py-20 bg-white dark:bg-slate-800 relative overflow-hidden"
+        className="bg-white dark:bg-slate-800 relative overflow-hidden"
       >
         <div className="absolute top-0 left-0 w-1/3 h-1/3 bg-gradient-to-br from-primary/5 to-secondary/5 rounded-br-full"></div>
 
