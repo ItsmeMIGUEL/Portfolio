@@ -173,7 +173,7 @@ export default function HeroSection() {
 
       {/* Desktop Hero Section */}
       {!isMobile && (
-        <section className="min-h-screen relative flex flex-col justify-center overflow-hidden bg-gradient-to-br from-slate-50 to-slate-100 dark:from-slate-900 dark:to-slate-800">
+        <section className="px-20 min-h-screen relative flex flex-col justify-center overflow-hidden bg-gradient-to-br from-slate-50 to-slate-100 dark:from-slate-900 dark:to-slate-800">
           {/* Background Elements */}
           <div className="absolute inset-0 overflow-hidden">
             <div className="absolute inset-0 bg-gradient-to-r from-primary/5 to-secondary/5 dark:from-primary/10 dark:to-secondary/10"></div>
